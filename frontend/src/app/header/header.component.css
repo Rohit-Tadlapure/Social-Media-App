@@ -1,0 +1,15 @@
+.header{
+    height: 80px;
+    margin: 0px auto;
+    display: flex;
+    background-color: #ff9a52;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.site-slogan{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+h1{
+    font-size: 45px;
+}

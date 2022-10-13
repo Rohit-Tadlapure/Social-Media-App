@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    background-color: #ffac70;
+    border:1.5px solid #ff8935;
+    
+   
+}
+.site-menu{
+    padding: 5px 50px;
+    margin-left:400px;
+}
+a{
+    text-decoration: none;
+    color: #212f3d;
+    margin: 0px 25px;
+    font-size: 18px;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.logout{
+    margin-left: 334px;
+}
+.logout:hover{
+    color: rgb(255, 255, 255);
+    
+}

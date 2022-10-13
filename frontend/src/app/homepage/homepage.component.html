@@ -1,0 +1,29 @@
+<div class="main">
+    <div class="homePage">
+        <app-header></app-header>
+        <app-navbar></app-navbar>
+        
+
+    </div>
+    <div >
+        
+        <div class="content-box"  *ngFor="let p of post" >
+
+            <div class="title-box" style="color: #c6fdff"> 
+                <h4>{{p.title}}</h4>
+            </div><br><hr><br>
+
+            
+            <div class="para-box" style="color: #ffff">
+                <h5>{{p.content}}</h5>
+            </div><hr><br>
+
+            <!-- <button class="btn btn-primary" (click)="onLike()">like</button> -->
+            <button class="btn btn-primary" (click)="onLike(p.title)">
+                {{ p.liked ? "Liked" : "Like" }}
+            </button>
+
+
+        </div>
+    </div>
+</div>

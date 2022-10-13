@@ -1,0 +1,57 @@
+<div class="container">  
+    <div class="card-container"> 
+        <div class="title">
+            <h1 id="headline">Social Media App </h1>
+            <div id="register"><h2>Register Page</h2></div>
+        </div> 
+        <form class="example-form" [formGroup]="UserRegistrationForm" (ngSubmit)="onSubmit(confirmPassword.value)">
+        <div class="row">
+            <div class="col-12">
+                
+                      <label for="name" >Name : </label>
+                      <input placeholder="Enter your name" required #name formControlName = "name">
+                      <br>
+                      <span *ngIf="UserRegistrationForm.get('name')?.hasError('required') && UserRegistrationForm.get('name')?.touched" style="color:red;">Name is required</span>
+                      
+                    
+                </div>
+            <div class="col-12">
+                
+                  <label for="email">Email : </label>
+                  <input placeholder="Enter your Email id" formControlName = "email" type="email"><br>
+                  <span *ngIf="UserRegistrationForm.get('email')?.hasError('required') && UserRegistrationForm.get('email')?.touched" style="color:red;">Enter Valid email</span>
+                
+            </div> 
+
+            <div class="col-12">
+                
+                <label for="mobile">Mobile No : </label>
+                <input placeholder="Enter 10 digit mobile number" formControlName = "mobile"><br>
+                <span *ngIf="UserRegistrationForm.get('mobile')?.hasError('required') && UserRegistrationForm.get('mobile')?.touched" style="color:red;">Enter Valid mobile number</span>
+              
+          </div> 
+            
+            <div class ="col-12">
+                
+                    <label for="password">Password : </label>
+                    <input  placeholder="Enter password" type="password" formControlName = "password"><br>
+                    <span *ngIf="UserRegistrationForm.get('password')?.hasError('required') && UserRegistrationForm.get('password')?.touched" style="color:red;">Password is required</span>
+                  
+            </div>
+            <div class ="col-12">
+                
+                    <label for="confirmPassword">Confirm Password : </label>
+                    <input #confirmPassword matInput placeholder="Confirm password you entered" type="password" formControlName="confirmPassword"><br>
+                    <span *ngIf="UserRegistrationForm.get('confirmPassword')?.hasError('required') && UserRegistrationForm.get('confirmPassword')?.touched" style="color:red;">Confirm Password is required</span>
+                  
+            </div>   
+            
+            <div class="col-12">
+                <button class="btn btn-primary" color="primary" type ="submit" [disabled]="!UserRegistrationForm.valid"> Submit </button> 
+               
+            </div>
+            <p>Already a user? <a routerLink = '/login'>Login here</a></p>
+        </div>
+    </form>
+    
+</div>

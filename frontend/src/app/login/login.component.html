@@ -1,0 +1,36 @@
+<div class="container">  
+    <div class="card-container"> 
+        <div class="title">
+            <h1 id="headline">Social Media App </h1>
+            <div id="login"><h2>Login Page</h2></div>
+        </div> 
+        <form class="example-form" [formGroup]="loginUserForm" (ngSubmit)="login()" >
+        <div class="row">
+            
+            <div class="col-12">
+                
+                  <label for="email">Email : </label>
+                  <input placeholder="Enter your Email id" formControlName = "email" type="email"><br>
+                  <span *ngIf="loginUserForm.get('email')?.hasError('required') && loginUserForm.get('email')?.touched" style="color:red;">Enter valid email</span>
+                
+            </div> 
+            
+            <div class ="col-12">
+                
+                    <label for="password">Password : </label>
+                    <input  placeholder="Password" type="password" formControlName = "password">
+                    <span *ngIf="loginUserForm.get('password')?.hasError('required') && loginUserForm.get('password')?.touched" style="color:red;">Password is required</span>
+                  
+            </div>
+            
+            <div class="col-12">
+                <button class="btn btn-primary" color="primary" type ="submit" [disabled]="!loginUserForm.valid">  Submit</button> 
+               
+            </div>
+            <p>Not a user? <a routerLink = '/register'>Register here</a></p>
+        </div>
+    </form>
+    
+</div>
+
+

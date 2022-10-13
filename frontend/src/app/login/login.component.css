@@ -1,0 +1,86 @@
+
+.card-container{
+    background-image: url("https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+
+}
+
+.title{
+    padding-top: 50px;
+    
+}
+#headline{
+    font-size: 50px;
+}
+#login{
+    font-size: 20px;
+}
+input[type=text],[type=email],[type=password]select{
+    
+    padding: 20px 20px;
+    margin: 8px 0px;
+  
+    border: 1px solid black;
+    border-radius: 30px;
+    
+}
+input[type=submit]{
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;  
+}
+input[type=submit]:hover{
+    background-color: #14c28e;
+}
+
+
+.example-form{
+    border-radius: 35px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 420px;
+    margin: 80px auto;
+    height: 225px;
+    border:1.5px solid #bbbbbb;
+    opacity: 0.85;
+    overflow: hidden;
+}
+.col-12{
+    padding: 10px;
+}
+
+#login{
+    text-align: center;
+    color: white;
+}
+
+#headline{
+    text-align: center;
+    color: rgb(255, 128, 69);
+}
+#register{
+    text-align: center;
+    color: white;
+}
+input{
+    height: 25px;
+    width: 280px;
+}
+button{
+    color: black;
+    background-color: rgb(255, 128, 69);
+    height: 25px;
+    width: 90px;
+    border-radius: 20px;
+    margin-left: 150px;
+    
+}
+input.ng-invalid.ng-touched{
+    border-color: red;
+}
+

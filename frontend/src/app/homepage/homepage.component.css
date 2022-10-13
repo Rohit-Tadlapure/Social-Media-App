@@ -1,0 +1,51 @@
+.main{
+    
+    background-image: url("https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-box{
+    height: 320px;
+    width: 400px;
+    border: 0.1px solid #72c5ff;
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 10px 10px;
+    margin-bottom: auto;
+    font-size: 19px;
+    opacity: 0.80;
+    background-color: #1c222c;
+    
+}
+.content-box:hover{
+    opacity: 0.9;
+    background-color:#485362;
+    
+}
+.para-box{
+    height: 150px;
+    padding: 0px;
+}
+
+.btn{
+    margin: 10px auto;
+    background-color: #72c5ff;
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    
+}
+.btn:hover{
+    background-color: #9795ff;
+    width: 65px;
+    height: 28px;
+}
+.title-box{
+    font-size: 20px;
+    padding: 0px;
+    
+}
+
+

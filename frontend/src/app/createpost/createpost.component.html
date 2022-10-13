@@ -1,0 +1,24 @@
+<div class="main">
+    <div class="homePage">
+      <app-header></app-header>
+      <app-navbar></app-navbar>
+    </div>
+  
+    <form class="createPostForm" [formGroup]="postForm" (ngSubmit)="onSubmit()">
+  
+      <div class="mb-3">
+        <label class="form-label" style="color: #c6fdff">Enter title : </label> <br>
+        <input type="text" name="ptitle" class="form-control1" id="title" placeholder="Enter title of post here" formControlName="title" style="background-color: #c6fdff ;border-radius: 5 5px;"><br>
+        <span *ngIf="postForm.get('title')?.hasError('required') && postForm.get('title')?.touched" style="color:red;">Title is required</span>  
+      </div>
+  
+      <div class="text-area">
+        <p style="color: #c6fdff;">Enter Content here : </p>
+        <textarea name="pcontent" cols="42" rows="15" placeholder="Enter Content here" formControlName="content" style="background-color: #c6fdff ;border-radius: 10px; padding-top: 10px"></textarea ><br>
+        <span *ngIf="postForm.get('content')?.hasError('required') && postForm.get('content')?.touched" style="color:red;">Content is required</span>  
+      </div>
+  
+      <button class="button " >Post</button>
+  
+    </form>
+  </div>
